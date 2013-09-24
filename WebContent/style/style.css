@@ -5,3 +5,38 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
 	padding: 0; 
 	border: 0; 
 }
+
+body{
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#555;
+}
+
+#wrapper{
+    width:900px;
+    margin: 0 auto;
+}
+
+#header{
+    width:900px;
+    margin:0 auto;
+}
+
+#navmenu{    
+    width:900px;
+    margin: 0 auto;
+    height: 50px;
+    border: 2px solid #555;
+    margin-top:10px;
+}
+
+#navmenu ul li a{
+    text-decoration: none;
+}
+
+#navmenu ul li{
+    float:left;
+    list-style: none;
+    margin: 0 auto;
+    line-height: 50px;
+}
