@@ -1,110 +1,140 @@
-/*Initializing default values to 0*/
-
-html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
-	margin: 0; 
-	padding: 0; 
-	border: 0; 
-}
-
 
 body{
-    background-color: #000;
-    font-size:16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:#555;
+	background-color: #000;
+	font-size: 90%;
+	font-family: Arial, 'Lucida Sans Unicode';
+	line-height: 1.5;
+	text-align: left;
+	margin: 0 auto;
+	width: 75%;
+	clear: both;
 }
 
-#wrapper{
-    width:900px;
-    margin: 0 auto;
-}
-
-#header{
-    width:900px;
-    margin:0 auto;
-}
-
-#header h6{
-	line-height: 0;
-	margin-bottom: 20px;
+a{
+	text-decoration: none;
 }
 
 
-#navmenu{    
-    width:900px;
-    margin: 0 auto;
-    height: 50px;
-    border-top: 1px solid #555;
-    border-left: 1px solid #555;
-    border-right: 1px solid #555;
-    margin-top:10px;
+.MainHeader img{
+	width:30%;
+	height:auto;
+	margin:2% 0;
 }
 
-#content{    
-    width:900px;
-    margin: 0 auto;
-    height: 500px;
-    border: 1px solid #555;
+.MainHeader nav{
+	background-color: #333;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 
-#footer{    
-    width:900px;
-    margin: 0 auto;
-    height: 50px;
-    border: 1px solid #555;
-    border-top: 0px;
-    line-height:50px;
-    font-size:0.6em;
-    text-align:center;
+.MainHeader nav ul{
+	list-style: none;
+	margin: 0 auto;
+	margin: 2% 0;
 }
 
-#logo{
-	border:1px solid #222;
-	width:100px;
-	height: 100px;
-	margin: 20px;
-	margin-bottom:0;
-	float:left;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius:15px;
-	line-height:100px;
-	text-align:center;
-	color:#FFF;
-	font-weight: bold;
-	font-size:3em;
-	-moz-box-shadow: 1px 1px 2px #666;
-	-webkit-box-shadow: 1px 1px 2px #666;
-	box-shadow: 1px 1px 2px #666;
+.MainHeader nav ul li{
+	float: left;
+	display: inline;
 }
 
-#navmenu ul li a{
-    text-decoration: none;
-    color: #333;
-}
-
-#navmenu ul li a:hover{
-    text-decoration: none;
-    color: #666;
-}
-
-#navmenu ul li a.current{
-    text-decoration: none;
-    color: #666;
-}
-
-#navmenu ul li{
-    float:left;
-    width:80px;
-    list-style: none;
-    text-align:center;
-    line-height: 50px;
-    border-right: 1px solid #222;
-    font-weight: bold;
-}
-
-form{
+.MainHeader nav a:link, .MainHeader nav a:visited{
+	color: #FFF;
 	display: inline-block;
-	margin-left: 200px;
-	margin-top: 100px;
+	padding: 10px 15px;
+	height: 20px;
 }
+
+.MainHeader nav a:hover, .MainHeader nav a:active, 
+.MainHeader nav .active a:link, .MainHeader nav .active a:visited{
+	background-color: #666;
+	font-weight: bold;
+}
+
+.MainHeader nav ul li a{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.MainContent{
+	line-height: 25px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.Content{
+	width: 100%;
+	float: left;
+}
+
+.Article{
+	background-color: #666;
+	color: #000;
+	padding: 3% 5%;
+	margin-top: 2%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+
+}
+
+
+.MainFooter{
+	width: 100%;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #333;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.MainFooter p{
+	width: 90%;
+	margin: 2% auto;
+	color: #FFF;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 600px)
+{
+	body{
+		width: 95%;
+		font-size: 95%;
+	}
+	
+	.MainHeader img{
+		width:100%;
+	}
+	
+	.MainHeader nav{
+		height: 200px;
+	}
+	
+	.MainHeader nav ul{
+		padding-left: 0;
+	}
+	
+	.MainHeader nav ul li{
+		width: 100%;
+		text-align: center;
+	}
+	
+	.MainHeader nav a:link, .MainHeader nav a:visited{
+		padding: 10px 15px;
+		height: 20px;
+		display: block;
+	}
+
+	
+}
+
+
+
+
+
+
