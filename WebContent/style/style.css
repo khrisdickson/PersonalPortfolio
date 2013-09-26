@@ -16,9 +16,18 @@ a{
 
 
 .MainHeader img{
-	width:30%;
+	width:auto;
 	height:auto;
-	margin:2% 0;
+	margin:2% 0 0 0;
+}
+
+.MainHeader h2, h6{
+	color: #444;
+	line-height: 0;
+}
+
+.MainHeader h6{
+	margin-top: 0;
 }
 
 .MainHeader nav{
@@ -108,7 +117,7 @@ a{
 	}
 	
 	.MainHeader img{
-		width:100%;
+		width:auto;
 	}
 	
 	.MainHeader nav{
