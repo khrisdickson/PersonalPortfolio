@@ -69,28 +69,47 @@ a{
 }
 
 .MainContent{
-	line-height: 25px;
+	line-height: 20px;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 }
 
 .Content{
-	width: 100%;
+	width: 77%;
 	float: left;
 }
 
 .Article{
 	background-color: #666;
 	color: #000;
-	padding: 3% 5%;
-	margin-top: 2%;
+	padding: 1% 2%;
+	margin-top: 1.5%;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 
 }
 
+.KeepConnected{
+	width: 20%;
+	float: left;
+	text-align: center;
+	line-height: 20px;
+	background-color: #666;
+	color: #000;
+	padding: 1% 1%;
+	margin-top: 1%;
+	margin-left: 1%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+
+}
+
+.KeepConnected img{
+	margin: 0 2%;
+}
 
 .MainFooter{
 	width: 100%;
@@ -99,7 +118,7 @@ a{
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	background-color: #333;
-	margin-top: 2%;
+	margin-top: 1.5%;
 	margin-bottom: 2%;
 }
 
@@ -107,6 +126,7 @@ a{
 	width: 90%;
 	margin: 2% auto;
 	color: #FFF;
+	font-size: 60%;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 600px)
@@ -139,6 +159,17 @@ a{
 		display: block;
 	}
 
+	.Content{
+		width: 100%;
+		float: left;
+	}
+	
+	.KeepConnected{
+	width: 98%;
+	float: left;
+	margin-left: 0;
+	}
+	
 	
 }
 
