@@ -1,12 +1,27 @@
+<!--  
+Author: Khris Dickson
+Date: September 30 2013
+Name: Khris Dickson Portfolio Website
+Description: This is my style sheet for my portfolio project for Advanced Web Design
+There is a section to allow the site to be viewed in mobile in a respective layout
+-->
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<title>Khris Dickson | Home</title>
 		<link rel="stylesheet" href="style/style.css" type="text/css" />
-		<link href="themes/2/js-image-slider.css" rel="stylesheet" type="text/css" />
-        <script src="themes/2/js-image-slider.js" type="text/javascript"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tinycarousel.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#slider1').tinycarousel();	
+			});
+		</script>	
 		<meta name="viewport" content="width=device-width, intial-scale=1.0">
+		
+		
 	</head>
 	
 	<body>
@@ -41,9 +56,24 @@
 					
 					<content>
 						<p>My name as you may have noticed is Khris Dickson. I am currently 2<sup>nd</sup> year Computer Programmer Analyst student studying at Georgian College in Barrie, Ontario.</p>
-						<p>I have created this web site in order to publish and show off the work I have done, and will be doing as I go through the program.</p>
+						<p>I have created this web site in order to publish and show off the work I have done, and will be doing as I go through the program. I enjoy computer programming, and through this program, I have come to love doing web design and application work as well.</p>
 						<p>Hopefully the content you see on this site suggests, inspires, and helps you envision new ideas, or even allow you to lend me feedback and advice on areas I can improve on, and some areas things could be done better.</p>			
 					</content>
+					
+					<h2>Websites I have Created:</h2>
+					<!--  Tiny Carousel  taken from http://baijs.nl/tinycarousel/*/ -->
+						<div id="slider1">
+							<a class="buttons prev" href="#">left</a>
+							<div class="viewport">
+								<ul class="overview">
+									<li><a href="http://webdesign4.georgianc.on.ca/~100083097/year1/monsterhunters/"><img src="images/monsterhunters.png" /></a></li>
+									<li><a href="http://webdesign4.georgianc.on.ca/~100083097/year1/drive/"><img src="images/drive.png" /></a></li>
+									<li><a href="http://webdesign4.georgianc.on.ca/~100083097/year1/weather/"><img src="images/weather.png" /></a></li>									
+									
+								</ul>
+							</div>
+							<a class="buttons next" href="#">right</a>
+						</div>
 				</article>
 
 			</div>
@@ -54,9 +84,9 @@
 			<header>
 				<h2>Connect With Me</h2>
 			</header>
-			<a href="http://www.twitter.com" title="Twitter"><img src="images/twitter.png" title="Twitter"></a>
-			<a href="http://www.linkedin.com"><img src="images/linkedin.png" title="LinkedIn"></a>
-			<a href="http://www.facebook.com"><img src="images/facebook.png" title="Facebook"></a>
+			<a href="http://www.twitter.com/dicksonkhris" title="Twitter"><img src="images/twitter.png" title="Twitter"></a>
+			<a href="http://www.linkedin.com/pub/khris-dickson/70/55/130"><img src="images/linkedin.png" title="LinkedIn"></a>
+			<a href="https://www.facebook.com/khris.dickson"><img src="images/facebook.png" title="Facebook"></a>
 		</aside>
 
 		<!-- Footer section -->

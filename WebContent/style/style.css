@@ -1,6 +1,7 @@
 /*
 Author: Khris Dickson
 Date: September 30 2013
+Name: Khris Dickson Portfolio Website
 Description: This is my style sheet for my portfolio project for Advanced Web Design
 There is a section to allow the site to be viewed in mobile in a respective layout
 */
@@ -102,6 +103,14 @@ a{
 
 }
 
+.Article ul li {
+	list-style: none;
+	margin-top: 2%;
+	margin-left: -5%;
+	text-align: center;
+	border: 2px solid black;
+}
+
 /*My keep connected section to fit in nicely with the main article content*/
 .KeepConnected{
 	width: 20%;
@@ -147,6 +156,11 @@ a{
 .MainFooter a:link{
 	color: #000;
 	text-decoration: underline;
+}
+
+.Resume{
+	text-align: Center;
+	font-size: 2em;
 }
 
 /*This section modifies the styling in order to make it more user friendly on mobile
@@ -200,5 +214,11 @@ a{
 
 
 
-
-
+/* Tiny Carousel  taken from http://baijs.nl/tinycarousel/*/
+#slider1 { height: 1%; overflow:hidden; padding: 0 0 10px;   }
+#slider1 .viewport { float: left; width: 240px; height: 125px; overflow: hidden; position: relative; }
+#slider1 .buttons { background:url("../images/buttons.png") no-repeat scroll 0 0 transparent; display: block; margin: 30px 10px 0 0; background-position: 0 -38px; text-indent: -999em; float: left; width: 39px; height: 37px; overflow: hidden; position: relative; }
+#slider1 .next { background-position: 0 0; margin: 30px 0 0 10px;  }
+#slider1 .disable { visibility: hidden; }
+#slider1 .overview { list-style: none; position: absolute; padding: 0; margin: 0; width: 240px; left: 0 top: 0; }
+#slider1 .overview li{ float: left; margin: 0 20px 0 0; padding: 1px; height: 121px; border: 1px solid #dcdcdc; width: 236px;}
